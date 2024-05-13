@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Report</title>
+    <style>
+        /* CSS styles for enhanced readability */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Universal selector to change all fonts to Roboto regular */
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Standard paddings and margins for all elements */
+        * {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Child and sibling selectors to change font weight to bold */
+        h2 > strong,
+        h3 + p {
+            font-weight: bold;
+        }
+
+        /* :hover pseudo-class to change background color on hover */
+        p:hover,
+        li:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* :last-child pseudo-class to change text color of the last column in the table */
+        td:last-child {
+            color: red;
+        }
+
+        /* :even and :odd pseudo-classes to alternate styles of rows in unordered list */
+        li:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+
+        /* :even and :odd pseudo-classes to alternate styles of rows in table */
+        tr:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+
+        /* ::first-letter to change font-size of first letter in <p> element */
+        p::first-letter {
+            font-size: 150%;
+        }
+
+        /* ::selection pseudo-element to style background of user-selected text */
+        ::selection {
+            background-color: #ffcc00;
+        }
+
+        /* ::before pseudo-element to emulate list style with Unicode character */
+        ul::before {
+            content: "\2192 "; /* Unicode character for right arrow */
+        }
+
+        /* Answers to the questions */
+        #text__paragraphs {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#text">Text</a>
+                <ul>
+                    <li><a href="#text__headings">Headings</a></li>
+                    <li><a href="#text__paragraphs">Paragraphs</a></li>
+                    <li><a href="#text__blockquotes">Blockquotes</a></li>
+                    <li><a href="#text__lists">Lists</a></li>
+                    <li><a href="#text__hr">Horizontal rules</a></li>
+                    <li><a href="#text__tables">Tabular data</a></li>
+                    <li><a href="#text__code">Code</a></li>
+                    <li><a href="#text__inline">Inline elements</a></li>
+                    <li><a href="#text__comments">HTML Comments</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <article id="text__paragraphs">
+            <h2>Answers to Questions</h2>
+            <p><strong>What is selector’s specificity and how it’s calculated?</strong></p>
+            <p>The selector's specificity determines which CSS rule takes precedence when multiple rules target the same element. It's calculated based on the types of selectors used, where ID selectors have the highest specificity, followed by class selectors, attribute selectors, and element selectors. Inline styles have the highest specificity and override other styles.</p>
+            <p><strong>What are complex selectors?</strong></p>
+            <p>Complex selectors are CSS selectors that target elements based on multiple conditions such as element types, class names, IDs, attributes, and their relationships in the HTML structure. Examples include descendant selectors, child selectors, adjacent sibling selectors, and attribute selectors.</p>
+            <p><strong>What is the difference between pseudo-classes and pseudo-elements?</strong></p>
+            <p>Pseudo-classes are used to define special states or behaviors of elements, such as :hover, :active, or :focus. Pseudo-elements, on the other hand, target specific parts of an element, like the first letter or first line of text, using selectors like ::first-letter and ::first-line.</p>
+        </article>
+    </main>
+</body>
+</html>
